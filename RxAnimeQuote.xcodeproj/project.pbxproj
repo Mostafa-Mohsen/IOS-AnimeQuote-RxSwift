@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B20B58BF823F54E27C12A0F /* Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB7089BEE4CF3F7A12382CC /* Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework */; };
+		B2EBDAC40EBA789C4C097ADC /* Pods_RxAnimeQuote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7C7E5E96AD2D303F7DE29A /* Pods_RxAnimeQuote.framework */; };
+		CEFD1AF52956D6C60080F444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1AF42956D6C60080F444 /* AppDelegate.swift */; };
+		CEFD1AF72956D6C60080F444 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1AF62956D6C60080F444 /* SceneDelegate.swift */; };
+		CEFD1AF92956D6C60080F444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1AF82956D6C60080F444 /* ViewController.swift */; };
+		CEFD1AFC2956D6C60080F444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1AFA2956D6C60080F444 /* Main.storyboard */; };
+		CEFD1AFE2956D6C70080F444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1AFD2956D6C70080F444 /* Assets.xcassets */; };
+		CEFD1B012956D6C70080F444 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD1AFF2956D6C70080F444 /* LaunchScreen.storyboard */; };
+		CEFD1B0C2956D6C80080F444 /* RxAnimeQuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B0B2956D6C80080F444 /* RxAnimeQuoteTests.swift */; };
+		CEFD1B162956D6C80080F444 /* RxAnimeQuoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B152956D6C80080F444 /* RxAnimeQuoteUITests.swift */; };
+		CEFD1B182956D6C80080F444 /* RxAnimeQuoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B172956D6C80080F444 /* RxAnimeQuoteUITestsLaunchTests.swift */; };
+		CEFD1B272956D7F10080F444 /* AnimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B262956D7F10080F444 /* AnimeModel.swift */; };
+		CEFD1B292956D88B0080F444 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B282956D88B0080F444 /* Requester.swift */; };
+		CEFD1B2B2956DB280080F444 /* AnimeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFD1B2A2956DB280080F444 /* AnimeParams.swift */; };
+		E86A4E2833712CCC93676752 /* Pods_RxAnimeQuoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73D8D70E87E83BBD80E0F3A /* Pods_RxAnimeQuoteTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEFD1B082956D6C80080F444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFD1AE92956D6C60080F444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFD1AF02956D6C60080F444;
+			remoteInfo = RxAnimeQuote;
+		};
+		CEFD1B122956D6C80080F444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFD1AE92956D6C60080F444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFD1AF02956D6C60080F444;
+			remoteInfo = RxAnimeQuote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		586F0A7431F174BBECFB240F /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuote-RxAnimeQuoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuote-RxAnimeQuoteUITests/Pods-RxAnimeQuote-RxAnimeQuoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		88603DD22A364224642C1EAF /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuote-RxAnimeQuoteUITests.release.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuote-RxAnimeQuoteUITests/Pods-RxAnimeQuote-RxAnimeQuoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A9307DC5E4ED98D8264DA84 /* Pods-RxAnimeQuote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuote.release.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuote/Pods-RxAnimeQuote.release.xcconfig"; sourceTree = "<group>"; };
+		AE7C7E5E96AD2D303F7DE29A /* Pods_RxAnimeQuote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAnimeQuote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB7089BEE4CF3F7A12382CC /* Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0FF231C1B740488D32B67F /* Pods-RxAnimeQuote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuote.debug.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuote/Pods-RxAnimeQuote.debug.xcconfig"; sourceTree = "<group>"; };
+		CEFD1AF12956D6C60080F444 /* RxAnimeQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxAnimeQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFD1AF42956D6C60080F444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFD1AF62956D6C60080F444 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEFD1AF82956D6C60080F444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEFD1AFB2956D6C60080F444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEFD1AFD2956D6C70080F444 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFD1B002956D6C70080F444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFD1B022956D6C70080F444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFD1B072956D6C80080F444 /* RxAnimeQuoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAnimeQuoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFD1B0B2956D6C80080F444 /* RxAnimeQuoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAnimeQuoteTests.swift; sourceTree = "<group>"; };
+		CEFD1B112956D6C80080F444 /* RxAnimeQuoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAnimeQuoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFD1B152956D6C80080F444 /* RxAnimeQuoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAnimeQuoteUITests.swift; sourceTree = "<group>"; };
+		CEFD1B172956D6C80080F444 /* RxAnimeQuoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAnimeQuoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEFD1B262956D7F10080F444 /* AnimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModel.swift; sourceTree = "<group>"; };
+		CEFD1B282956D88B0080F444 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		CEFD1B2A2956DB280080F444 /* AnimeParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeParams.swift; sourceTree = "<group>"; };
+		E2DFA8414D6CC357EFE5B83A /* Pods-RxAnimeQuoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuoteTests.debug.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuoteTests/Pods-RxAnimeQuoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6C6453F6A53E59EA0751815 /* Pods-RxAnimeQuoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAnimeQuoteTests.release.xcconfig"; path = "Target Support Files/Pods-RxAnimeQuoteTests/Pods-RxAnimeQuoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		E73D8D70E87E83BBD80E0F3A /* Pods_RxAnimeQuoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAnimeQuoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFD1AEE2956D6C60080F444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2EBDAC40EBA789C4C097ADC /* Pods_RxAnimeQuote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B042956D6C80080F444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86A4E2833712CCC93676752 /* Pods_RxAnimeQuoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B0E2956D6C80080F444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B20B58BF823F54E27C12A0F /* Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		596355C54F7C85B0C48DFB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE7C7E5E96AD2D303F7DE29A /* Pods_RxAnimeQuote.framework */,
+				BFB7089BEE4CF3F7A12382CC /* Pods_RxAnimeQuote_RxAnimeQuoteUITests.framework */,
+				E73D8D70E87E83BBD80E0F3A /* Pods_RxAnimeQuoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		946C8E68BE38F879B019D14E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC0FF231C1B740488D32B67F /* Pods-RxAnimeQuote.debug.xcconfig */,
+				8A9307DC5E4ED98D8264DA84 /* Pods-RxAnimeQuote.release.xcconfig */,
+				586F0A7431F174BBECFB240F /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.debug.xcconfig */,
+				88603DD22A364224642C1EAF /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.release.xcconfig */,
+				E2DFA8414D6CC357EFE5B83A /* Pods-RxAnimeQuoteTests.debug.xcconfig */,
+				E6C6453F6A53E59EA0751815 /* Pods-RxAnimeQuoteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEFD1AE82956D6C60080F444 = {
+			isa = PBXGroup;
+			children = (
+				CEFD1AF32956D6C60080F444 /* RxAnimeQuote */,
+				CEFD1B0A2956D6C80080F444 /* RxAnimeQuoteTests */,
+				CEFD1B142956D6C80080F444 /* RxAnimeQuoteUITests */,
+				CEFD1AF22956D6C60080F444 /* Products */,
+				946C8E68BE38F879B019D14E /* Pods */,
+				596355C54F7C85B0C48DFB05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFD1AF22956D6C60080F444 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1AF12956D6C60080F444 /* RxAnimeQuote.app */,
+				CEFD1B072956D6C80080F444 /* RxAnimeQuoteTests.xctest */,
+				CEFD1B112956D6C80080F444 /* RxAnimeQuoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFD1AF32956D6C60080F444 /* RxAnimeQuote */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1B252956D7D70080F444 /* Entity */,
+				CEFD1B242956D7CC0080F444 /* Requester */,
+				CEFD1AF42956D6C60080F444 /* AppDelegate.swift */,
+				CEFD1AF62956D6C60080F444 /* SceneDelegate.swift */,
+				CEFD1AF82956D6C60080F444 /* ViewController.swift */,
+				CEFD1AFA2956D6C60080F444 /* Main.storyboard */,
+				CEFD1AFD2956D6C70080F444 /* Assets.xcassets */,
+				CEFD1AFF2956D6C70080F444 /* LaunchScreen.storyboard */,
+				CEFD1B022956D6C70080F444 /* Info.plist */,
+			);
+			path = RxAnimeQuote;
+			sourceTree = "<group>";
+		};
+		CEFD1B0A2956D6C80080F444 /* RxAnimeQuoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1B0B2956D6C80080F444 /* RxAnimeQuoteTests.swift */,
+			);
+			path = RxAnimeQuoteTests;
+			sourceTree = "<group>";
+		};
+		CEFD1B142956D6C80080F444 /* RxAnimeQuoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1B152956D6C80080F444 /* RxAnimeQuoteUITests.swift */,
+				CEFD1B172956D6C80080F444 /* RxAnimeQuoteUITestsLaunchTests.swift */,
+			);
+			path = RxAnimeQuoteUITests;
+			sourceTree = "<group>";
+		};
+		CEFD1B242956D7CC0080F444 /* Requester */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1B282956D88B0080F444 /* Requester.swift */,
+			);
+			path = Requester;
+			sourceTree = "<group>";
+		};
+		CEFD1B252956D7D70080F444 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CEFD1B262956D7F10080F444 /* AnimeModel.swift */,
+				CEFD1B2A2956DB280080F444 /* AnimeParams.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEFD1AF02956D6C60080F444 /* RxAnimeQuote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFD1B1B2956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuote" */;
+			buildPhases = (
+				04D649AA544E46B1684FB342 /* [CP] Check Pods Manifest.lock */,
+				CEFD1AED2956D6C60080F444 /* Sources */,
+				CEFD1AEE2956D6C60080F444 /* Frameworks */,
+				CEFD1AEF2956D6C60080F444 /* Resources */,
+				9A21BB7F58185BAAAECC6C30 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxAnimeQuote;
+			productName = RxAnimeQuote;
+			productReference = CEFD1AF12956D6C60080F444 /* RxAnimeQuote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEFD1B062956D6C80080F444 /* RxAnimeQuoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFD1B1E2956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuoteTests" */;
+			buildPhases = (
+				3A0E218C3E808847CC397592 /* [CP] Check Pods Manifest.lock */,
+				CEFD1B032956D6C80080F444 /* Sources */,
+				CEFD1B042956D6C80080F444 /* Frameworks */,
+				CEFD1B052956D6C80080F444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFD1B092956D6C80080F444 /* PBXTargetDependency */,
+			);
+			name = RxAnimeQuoteTests;
+			productName = RxAnimeQuoteTests;
+			productReference = CEFD1B072956D6C80080F444 /* RxAnimeQuoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEFD1B102956D6C80080F444 /* RxAnimeQuoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFD1B212956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuoteUITests" */;
+			buildPhases = (
+				58840DF0435467BD4E81C3F2 /* [CP] Check Pods Manifest.lock */,
+				CEFD1B0D2956D6C80080F444 /* Sources */,
+				CEFD1B0E2956D6C80080F444 /* Frameworks */,
+				CEFD1B0F2956D6C80080F444 /* Resources */,
+				FD690249C72ED7A3D1B24F22 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEFD1B132956D6C80080F444 /* PBXTargetDependency */,
+			);
+			name = RxAnimeQuoteUITests;
+			productName = RxAnimeQuoteUITests;
+			productReference = CEFD1B112956D6C80080F444 /* RxAnimeQuoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFD1AE92956D6C60080F444 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CEFD1AF02956D6C60080F444 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CEFD1B062956D6C80080F444 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEFD1AF02956D6C60080F444;
+					};
+					CEFD1B102956D6C80080F444 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CEFD1AF02956D6C60080F444;
+					};
+				};
+			};
+			buildConfigurationList = CEFD1AEC2956D6C60080F444 /* Build configuration list for PBXProject "RxAnimeQuote" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEFD1AE82956D6C60080F444;
+			productRefGroup = CEFD1AF22956D6C60080F444 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFD1AF02956D6C60080F444 /* RxAnimeQuote */,
+				CEFD1B062956D6C80080F444 /* RxAnimeQuoteTests */,
+				CEFD1B102956D6C80080F444 /* RxAnimeQuoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEFD1AEF2956D6C60080F444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD1B012956D6C70080F444 /* LaunchScreen.storyboard in Resources */,
+				CEFD1AFE2956D6C70080F444 /* Assets.xcassets in Resources */,
+				CEFD1AFC2956D6C60080F444 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B052956D6C80080F444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B0F2956D6C80080F444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04D649AA544E46B1684FB342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAnimeQuote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A0E218C3E808847CC397592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAnimeQuoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58840DF0435467BD4E81C3F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAnimeQuote-RxAnimeQuoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A21BB7F58185BAAAECC6C30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote/Pods-RxAnimeQuote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote/Pods-RxAnimeQuote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote/Pods-RxAnimeQuote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD690249C72ED7A3D1B24F22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote-RxAnimeQuoteUITests/Pods-RxAnimeQuote-RxAnimeQuoteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote-RxAnimeQuoteUITests/Pods-RxAnimeQuote-RxAnimeQuoteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxAnimeQuote-RxAnimeQuoteUITests/Pods-RxAnimeQuote-RxAnimeQuoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFD1AED2956D6C60080F444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD1AF92956D6C60080F444 /* ViewController.swift in Sources */,
+				CEFD1AF52956D6C60080F444 /* AppDelegate.swift in Sources */,
+				CEFD1B2B2956DB280080F444 /* AnimeParams.swift in Sources */,
+				CEFD1B272956D7F10080F444 /* AnimeModel.swift in Sources */,
+				CEFD1B292956D88B0080F444 /* Requester.swift in Sources */,
+				CEFD1AF72956D6C60080F444 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B032956D6C80080F444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD1B0C2956D6C80080F444 /* RxAnimeQuoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFD1B0D2956D6C80080F444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFD1B182956D6C80080F444 /* RxAnimeQuoteUITestsLaunchTests.swift in Sources */,
+				CEFD1B162956D6C80080F444 /* RxAnimeQuoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEFD1B092956D6C80080F444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFD1AF02956D6C60080F444 /* RxAnimeQuote */;
+			targetProxy = CEFD1B082956D6C80080F444 /* PBXContainerItemProxy */;
+		};
+		CEFD1B132956D6C80080F444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFD1AF02956D6C60080F444 /* RxAnimeQuote */;
+			targetProxy = CEFD1B122956D6C80080F444 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEFD1AFA2956D6C60080F444 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFD1AFB2956D6C60080F444 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEFD1AFF2956D6C70080F444 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFD1B002956D6C70080F444 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEFD1B192956D6C80080F444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEFD1B1A2956D6C80080F444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFD1B1C2956D6C80080F444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0FF231C1B740488D32B67F /* Pods-RxAnimeQuote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxAnimeQuote/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEFD1B1D2956D6C80080F444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9307DC5E4ED98D8264DA84 /* Pods-RxAnimeQuote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RxAnimeQuote/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEFD1B1F2956D6C80080F444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DFA8414D6CC357EFE5B83A /* Pods-RxAnimeQuoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxAnimeQuote.app/RxAnimeQuote";
+			};
+			name = Debug;
+		};
+		CEFD1B202956D6C80080F444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6C6453F6A53E59EA0751815 /* Pods-RxAnimeQuoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxAnimeQuote.app/RxAnimeQuote";
+			};
+			name = Release;
+		};
+		CEFD1B222956D6C80080F444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586F0A7431F174BBECFB240F /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxAnimeQuote;
+			};
+			name = Debug;
+		};
+		CEFD1B232956D6C80080F444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88603DD22A364224642C1EAF /* Pods-RxAnimeQuote-RxAnimeQuoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MMM.RxAnimeQuoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxAnimeQuote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFD1AEC2956D6C60080F444 /* Build configuration list for PBXProject "RxAnimeQuote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFD1B192956D6C80080F444 /* Debug */,
+				CEFD1B1A2956D6C80080F444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFD1B1B2956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFD1B1C2956D6C80080F444 /* Debug */,
+				CEFD1B1D2956D6C80080F444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFD1B1E2956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFD1B1F2956D6C80080F444 /* Debug */,
+				CEFD1B202956D6C80080F444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFD1B212956D6C80080F444 /* Build configuration list for PBXNativeTarget "RxAnimeQuoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFD1B222956D6C80080F444 /* Debug */,
+				CEFD1B232956D6C80080F444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFD1AE92956D6C60080F444 /* Project object */;
+}
